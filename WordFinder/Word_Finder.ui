@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Word_Finder</class>
+ <widget class="QMainWindow" name="Word_Finder">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>544</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>544</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Word Finder</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tab_FindReplace">
+      <property name="minimumSize">
+       <size>
+        <width>780</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>780</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_Find">
+       <attribute name="title">
+        <string>Find</string>
+       </attribute>
+       <widget class="QLabel" name="l_find_what">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>61</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find What:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l_find_where">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find Where:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bt_find">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>10</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>FIND</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bt_close">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>160</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CLOSE</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l_find_filters">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>File Filters:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_find_value">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>381</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_location">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>70</y>
+          <width>381</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cb_find_filters">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>All Files</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Text Files (*.txt)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Microsoft Office (*.doc,*.docx,*.xls,*.xlsm,*.ppt,*.pptx,...)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Open Office (*.odt,*.ods,*.odp,*.odg,*.odf,...)</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="bt_file_dialog">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>70</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bt_find_all">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>80</y>
+          <width>111</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>FIND ALL</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Replace">
+       <attribute name="title">
+        <string>Replace</string>
+       </attribute>
+       <widget class="QLineEdit" name="le_replace_find_value">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>30</y>
+          <width>381</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l_replace_value">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>71</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cb_replace_filters">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>150</y>
+          <width>171</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>All Files</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Text Files (*.txt)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Microsoft Office (*.doc,*.docx,*.xls,*.xlsm,*.ppt,*.pptx,...)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Open Office (*.odt,*.ods,*.odp,*.odg,*.odf,...)</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="le_replace_location">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>110</y>
+          <width>381</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l_replace_find">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>30</y>
+          <width>31</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Find :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l_replace_file_filters">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>150</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>File Filters:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bt_replace_file_dialog">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>110</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="le_replace_value">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>70</y>
+          <width>381</width>
+          <height>20</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l_replace">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>70</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Replace :</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="l_replace_location">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>110</y>
+          <width>51</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Location:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bt_replace_find">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>10</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>FIND</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bt_replace_close">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>180</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>CLOSE</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="bt_replace_find_all">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>10</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>FIND ALL</string>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="gb_Replace_Options">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>60</y>
+          <width>201</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Replace Options</string>
+        </property>
+        <widget class="QRadioButton" name="rb_allinFile">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>151</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>All in Selected File</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="rb_selinFile">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>191</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Selected Instance in Selected File</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="rb_allinFiles">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>181</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>All in Selected Files</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="rb_selinfiles">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>191</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Selected Instance in Selected Files</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="bt_replace">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>180</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>REPLACE</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="table_Results">
+      <property name="minimumSize">
+       <size>
+        <width>779</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>780</width>
+        <height>250</height>
+       </size>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>File Name</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>File Path</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Row Number</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Column Number</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Line</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="WordFinder_Status"/>
+  <action name="action_Settings">
+   <property name="text">
+    <string>&amp;Settings</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>bt_close</sender>
+   <signal>clicked()</signal>
+   <receiver>Word_Finder</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>696</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bt_replace_close</sender>
+   <signal>clicked()</signal>
+   <receiver>Word_Finder</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>721</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>264</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
