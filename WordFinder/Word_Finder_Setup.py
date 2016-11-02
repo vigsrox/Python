@@ -69,6 +69,7 @@ class  cl_Word_Finder (QtGui.QMainWindow,form_class):
     
     def searchfile(self,fext,searchapp):
         self.cleartable()
+        self.txtcopy = []
         for root, dirs, files in os.walk(self.le_location.text()):
                      for file in files:
                         if file.endswith(tuple(fext)):
@@ -76,9 +77,15 @@ class  cl_Word_Finder (QtGui.QMainWindow,form_class):
                             self.table_Results.insertRow(self.rowPosition)
                             self.table_Results.setItem(self.rowPosition,0,QtGui.QTableWidgetItem(file))
                             self.table_Results.setItem(self.rowPosition,1,QtGui.QTableWidgetItem(os.path.join(root,file)))
+                            self.stg_text_file = open(os.path.join(here,'Word_To_Find.txt'),"rb+")  
+                            self.txtcopy =self.stg_text_file.readlines()
+                            self.stg_text_file
+                            
+                                     
+                            
         
-        print(searchapp)
-        return
+        print(self.txtcopy)
+        
     
     def cleartable(self):
         while (self.table_Results.rowCount() > 0) :
