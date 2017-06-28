@@ -1,0 +1,29 @@
+---------C Loops in Tamil-----------------------------------------
+while               - இருக்கும்வரை
+do...while          - செய்...இருக்கும்வரை
+do...until          - செய்...ஆகும்வரை
+switch...case       - மாற்று...நிலை
+for*                - என்றால்*
+
+---------C Conditional Statements in Tamil------------------------
+if...else           - இருப்பின்...இன்றேல்
+if...elseif...else  - இருப்பின்...அன்றேல்...இன்றேல்
+
+---------C Fundamental Datatypes in Tamil-------------------------
+char                - எழுத்து
+signed              - குறிஉடை
+unsigned            - குறியில்லா
+short               - சுருக்கம்
+int                 - எண்
+long                - நீளம்
+float               - மிதவை
+double              - இரட்டை
+
+---------C Derived Datatypes in Tamil------------------------------
+#Array              - வரிசை
+#Pointer            - சுட்டி
+struct              - அமைப்பு
+enum                - எண்ணிக்கை
+union               - சங்கம்
+
+
